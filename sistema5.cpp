@@ -24,7 +24,7 @@ le righe della tabella
 //  int numcol   =5; 
   double coef[numrighe][numrighe+1]; //coefficienti 3 righe 4 colonne
 
-  ifstream pippo("dati.dat"); //file che contiene i coefficienti del sistema
+  ifstream pippo("datisis.dat"); //file che contiene i coefficienti del sistema
   cout<<"i coefficienti di un sistema 4 incognite sono"<<endl;
 //lettura dei coefficienti del sistema!! 
   for(int i =0; i<numrighe; i++){
