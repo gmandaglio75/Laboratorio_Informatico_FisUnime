@@ -1,0 +1,12 @@
+//creare un istogramma utilizzando i dati contenuti in dati2.dat della cartella dati2
+{
+  //                TH1F("come tichiami","titolo",numero di bin, estremo inferiore, estremo superiore);
+  TH1F *histo = new TH1F("histo","",100,0,0);
+  ifstream leggimi("./dati/dati2.dat");
+  if(leggimi.is_open()){
+    cout<<"ho letto il file"<<endl;
+  }
+  float pino;
+  while(leggimi>>pino) histo->Fill(pino); //il ciclo leggera i dati, che vengono passati uno a uno all'oggetto della classe attraverso il metodo Fill
+  histo->Draw(); //il metodo Draw consente di visualizzare il risultato della computazione dell'istogramma
+}
