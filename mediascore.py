@@ -1,0 +1,5 @@
+print("dammi di seguito i voti che hai conseguito nei corsi")
+variabile2 = list(map(float, input("ho preso ...").split()))
+print("i miei voti sono", variabile2)
+lodi = input("quante lodi hai preso?")
+print("la media vale ",(sum(variabile2)+float(lodi))/len(variabile2))

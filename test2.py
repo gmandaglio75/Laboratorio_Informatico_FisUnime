@@ -1,0 +1,6 @@
+print("sono un sommatore")
+a = input("dammi due numeri")
+print (a)
+b = a.split()
+print (b)
+print("la somma dei numeri che mi hai dato fa ",float(b[0])+float(b[1]))
