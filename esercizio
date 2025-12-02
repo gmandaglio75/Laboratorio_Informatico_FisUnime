@@ -1,0 +1,26 @@
+Scrivire una macro capace di computare 4 istogramma usando i dati contenuti
+nel file dati1.dat  nel seguente modo
+
+i primi 10 elementi del file rappresanto i dati del primo istogramma, i primi
+100 quelli del secondo, i primi 1000 del terzo, i 10000 del quarto
+
+Rappresentare i quattro istogrammi in una scatola divisa in 4 blocchi.
+
+TCanvas * pino = new TCanvas("pino","",1200,1200);
+
+pino->Divide(2,2); //spacca la scatola in 4 pezzi
+
+li numera secondo lo schema
+
+  1    2
+  
+  3    4
+
+per muoversi nelle scatole il metodo è
+
+cd
+
+esempio pino->cd(2)
+
+ti sposti nella scatola 2
+ 
